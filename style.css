@@ -2,67 +2,147 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: Arial, sans-serif;
+    font-family:Arial, sans-serif;
 }
 
 body{
-    background:#f5f5f5;
+    background:#f8f5ff;
+    color:#333;
 }
 
-.container{
-    width:90%;
-    max-width:500px;
-    margin:30px auto;
-    background:#ffffff;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
-}
-
-.logo{
-    width:120px;
-    display:block;
-    margin:0 auto 15px;
-}
-
-h2{
+.hero{
+    background:linear-gradient(135deg,#5a189a,#9d4edd);
+    color:#fff;
     text-align:center;
-    color:#6a1b9a;
+    padding:70px 20px;
+}
+
+.overlay{
+    max-width:700px;
+    margin:auto;
+}
+
+.hero h1{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.price del{
+    color:#ddd;
+    font-size:22px;
+}
+
+.price span{
+    display:block;
+    color:#ffd60a;
+    font-size:42px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.delivery{
+    margin:20px 0;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#ffd60a;
+    color:#000;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:50px;
+}
+
+.about{
+    max-width:900px;
+    margin:50px auto;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.about h2{
+    text-align:center;
+    color:#5a189a;
+    margin-bottom:20px;
+}
+
+.about ul{
+    list-style:none;
+}
+
+.about li{
+    padding:12px;
+    font-size:18px;
+    border-bottom:1px solid #eee;
+}
+
+#order{
+    max-width:700px;
+    margin:50px auto;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+#order h2{
+    text-align:center;
+    color:#5a189a;
     margin-bottom:20px;
 }
 
 input,
 textarea{
     width:100%;
-    padding:12px;
+    padding:15px;
     margin:10px 0;
     border:1px solid #ccc;
-    border-radius:6px;
+    border-radius:10px;
     font-size:16px;
-}
-
-textarea{
-    resize:vertical;
 }
 
 button{
     width:100%;
-    padding:12px;
-    background:#6a1b9a;
+    padding:16px;
+    background:#5a189a;
     color:#fff;
     border:none;
-    border-radius:6px;
-    font-size:16px;
+    border-radius:10px;
+    font-size:18px;
     cursor:pointer;
 }
 
 button:hover{
-    background:#4a148c;
+    background:#3c096c;
 }
 
-#msg{
-    margin-top:15px;
+footer{
+    background:#3c096c;
+    color:#fff;
     text-align:center;
-    color:green;
-    font-weight:bold;
+    padding:20px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:28px;
+    }
+
+    .hero h2{
+        font-size:22px;
+    }
+
+    .price span{
+        font-size:34px;
+    }
 }
