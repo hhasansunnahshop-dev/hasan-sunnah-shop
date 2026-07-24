@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hasan Sunnah Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<h1>🛍️ Hasan Sunnah Shop</h1>
+
+<form id="orderForm">
+
+<input type="text" id="name" placeholder="আপনার নাম" required><br><br>
+
+<input type="tel" id="phone" placeholder="মোবাইল নম্বর" required><br><br>
+
+<textarea id="address" placeholder="ঠিকানা" required></textarea><br><br>
+
+<select id="product">
+<option>ইরানি জাফরান সাবান</option>
+<option>জাফরান ক্রিম</option>
+</select><br><br>
+
+<input type="number" id="qty" value="1" min="1"><br><br>
+
+<button type="submit">অর্ডার করুন</button>
+
+</form>
+
+<p id="msg"></p>
+
+<script src="script.js"></script>
+
+</body>
+</html>
