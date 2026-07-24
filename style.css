@@ -1,148 +1,296 @@
+/* ===========================
+   HASAN SUNNAH SHOP
+   PREMIUM LANDING PAGE
+   PART 2.1
+=========================== */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-    background:#f8f5ff;
-    color:#333;
+    font-family:'Hind Siliguri',sans-serif;
+    background:#f7f8fc;
+    color:#222;
+    line-height:1.7;
 }
 
-.hero{
-    background:linear-gradient(135deg,#5a189a,#9d4edd);
-    color:#fff;
-    text-align:center;
-    padding:70px 20px;
+img{
+    width:100%;
+    display:block;
 }
 
-.overlay{
-    max-width:700px;
+a{
+    text-decoration:none;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
     margin:auto;
 }
 
-.hero h1{
-    font-size:38px;
-    margin-bottom:10px;
-}
+/*========================*/
 
-.hero h2{
-    font-size:28px;
-    margin-bottom:20px;
-}
+.topbar{
 
-.price del{
-    color:#ddd;
-    font-size:22px;
-}
+    background:#0f172a;
+    color:#fff;
 
-.price span{
-    display:block;
-    color:#ffd60a;
-    font-size:42px;
-    font-weight:bold;
-    margin-top:10px;
-}
-
-.delivery{
-    margin:20px 0;
-    font-size:20px;
-}
-
-.btn{
-    display:inline-block;
-    padding:15px 35px;
-    background:#ffd60a;
-    color:#000;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:50px;
-}
-
-.about{
-    max-width:900px;
-    margin:50px auto;
-    background:#fff;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
-
-.about h2{
     text-align:center;
-    color:#5a189a;
-    margin-bottom:20px;
-}
 
-.about ul{
-    list-style:none;
-}
-
-.about li{
     padding:12px;
-    font-size:18px;
-    border-bottom:1px solid #eee;
-}
 
-#order{
-    max-width:700px;
-    margin:50px auto;
-    background:#fff;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
-
-#order h2{
-    text-align:center;
-    color:#5a189a;
-    margin-bottom:20px;
-}
-
-input,
-textarea{
-    width:100%;
-    padding:15px;
-    margin:10px 0;
-    border:1px solid #ccc;
-    border-radius:10px;
     font-size:16px;
+
+    font-weight:600;
+
 }
 
-button{
+/*========================*/
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#5b21b6,#7c3aed,#9333ea);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+
+    height:600px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:50%;
+
+    top:-250px;
+
+    right:-200px;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:50%;
+
+    bottom:-220px;
+
+    left:-180px;
+
+}
+
+.hero-overlay{
+
     width:100%;
-    padding:16px;
-    background:#5a189a;
+
+    position:relative;
+
+    z-index:2;
+
+    padding:80px 0;
+
+}
+
+.hero-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    background:#ffd600;
+
+    color:#111;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.hero h1{
+
+    font-size:52px;
+
     color:#fff;
-    border:none;
-    border-radius:10px;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    color:#f8f8f8;
+
+    font-size:20px;
+
+    margin-bottom:30px;
+
+}
+
+.price-box{
+
+    margin-bottom:30px;
+
+}
+
+.price-box del{
+
+    color:#ddd;
+
+    font-size:28px;
+
+}
+
+.price-box h2{
+
+    color:#ffe600;
+
+    font-size:58px;
+
+    margin-top:5px;
+
+}
+
+.hero-btns{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.orderBtn{
+
+    background:#ffd600;
+
+    color:#111;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
     font-size:18px;
-    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.35s;
+
 }
 
-button:hover{
-    background:#3c096c;
+.orderBtn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+
 }
 
-footer{
-    background:#3c096c;
+.callBtn{
+
+    border:2px solid #fff;
+
     color:#fff;
-    text-align:center;
-    padding:20px;
-    margin-top:50px;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.35s;
+
 }
 
-@media(max-width:768px){
-    .hero h1{
-        font-size:28px;
+.callBtn:hover{
+
+    background:#fff;
+
+    color:#5b21b6;
+
+}
+
+.right img{
+
+    max-width:520px;
+
+    margin:auto;
+
+    animation:float 4s ease-in-out infinite;
+
+    filter:drop-shadow(0 25px 40px rgba(0,0,0,.35));
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
     }
 
-    .hero h2{
-        font-size:22px;
+    50%{
+
+        transform:translateY(-15px);
+
     }
 
-    .price span{
-        font-size:34px;
+    100%{
+
+        transform:translateY(0);
+
     }
+
 }
